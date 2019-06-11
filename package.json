@@ -1,0 +1,25 @@
+{
+  "name": "imd-weather-station",
+  "version": "1.0.1",
+  "description": "This is a simple app for updating and viewing weather of cities on a daily basis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Supreeth Baliga <supreethbaliga@gmail.com> (https://supreethbaliga.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.13",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {}
+}

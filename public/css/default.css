@@ -1,0 +1,16 @@
+.heading {
+  font-size: 60px;
+  font-style: italic;
+}
+
+.weather-card {
+  border: 3px solid black;
+}
+
+.weather-head {
+  border-bottom: 1px solid #62656b;
+}
+
+.weather-body {
+  background-color: #aaaaa7;
+}

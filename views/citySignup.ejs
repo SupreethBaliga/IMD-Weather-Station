@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>City Sign-up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/citySignup.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register a City</h1>
+        <hr>
+        <div class="col-sm-6 offset-sm-3">
+            <form action="http://localhost:8080/registerCity" method="post">
+                <div class="form-group">
+                    <label>City:</label>
+                    <input type="text" class="form-control" name="cityName" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" name="cityPwd" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-warning form-control">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMD Weather Station</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/default.css" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-8">
+            <h1 class="heading">IMD</h1>
+            <h2>Weather Station</h2>
+            <h5 id="todaysDate"></h5>
+        </div>
+        <div class="col-sm-3 m-5">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a class="btn btn-warning" href="/login">Login</a>
+                <a class="btn btn-warning" href="/updateData">Update Data</a>
+                <a class="btn btn-warning" href="/registerCity">Register City</a>
+                <a class="btn btn-warning" href="/logout">Logout</a>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="col-sm-6 offset-sm-3">
+        <form action="http://localhost:8080/handleCity" method="post">
+            <div class="form-group">
+                <label>Enter the City:</label>
+                <div class="row">
+                    <input type="text" name="inputCity" class="form-control" />
+                    <small class=" text-muted ">Please enter the first letter as a Capital.</small>
+                    <button class="btn btn-warning form-control " type="submit ">GO!</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr />
+    <div class="col-sm-6 offset-sm-3 ">
+        <div class="container weather-card ">
+            <div class="container weather-head m-0 ">
+                <h1><b><%=city%></b></h1>
+                <h3>
+                    <%=date%>
+                </h3>
+                <h2>
+                    <%=weatherType%>
+                </h2>
+            </div>
+            <div class="container weather-body m-0 ">
+                <h4>Min. Temperature:
+                    <%=minTemp%> &#8451;</h4>
+                <h4>Max. Temperature:
+                    <%=maxTemp%> &#8451;</h4>
+                <h4>Humidity:
+                    <%=humidity%> &#37;</h4>
+                <h4>Pressure:
+                    <%=pressure%> hPa</h4>
+                <h4>Wind Speed:
+                    <%=windSpeed%> kmph</h4>
+                <h4>Wind Direction:
+                    <%=windDirection%>
+                </h4>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</body>
+<script type="text/javascript " src="/js/default.js "></script>
+
+</html>
