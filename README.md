@@ -16,7 +16,7 @@ updating the data will be added.
 -- IMD Admin can only register cities and view data.<br/>
 -- City Admins of registered cities can update the weather data of their city.<br/>
 -- Guest users can only view data.<br/>
-<br/>
+
 2. The required links are:<br/>
 -- '/' : Today's weather data of the default city.<br/>
 -- '/[city]' : Today’s weather data of specified city is shown. If the city is not registered, 404 error page is displayed.
